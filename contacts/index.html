@@ -30,8 +30,25 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--
 =====================https://docs.google.com/forms/d/e/1FAIpQLSdIDFxlA9lPnlf1vTpZNmLH6WepA1bkkq4jrqSXffx9CvoEaA/formResponse==========================================================================-->
+    
+    
 </head>
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1754338591476656">
+</div>
    <div >
    <img  class="mySlides"src="images/Slide1.PNG" width="100%" >
     <img class="mySlides" src="images/Slide2.PNG"  width="100%">
