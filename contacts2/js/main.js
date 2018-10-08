@@ -1,27 +1,9 @@
-    var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
-}
     
-  
 
 
 (function ($) {
     "use strict";
-
 
 
   
@@ -29,6 +11,7 @@ function showDivs(n) {
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
+    var alert
 
     $('.validate-form').on('submit',function(){
         var check = true;
@@ -39,10 +22,16 @@ function showDivs(n) {
                 check=false;
             }
         }
-
+if(check==true){
+    alert("Thanks!");
+}
         return check;
-    });
+        
 
+            
+    
+
+    });
 
     $('.validate-form .input100').each(function(){
         $(this).focus(function(){
@@ -73,7 +62,11 @@ function showDivs(n) {
         var thisAlert = $(input).parent();
 
         $(thisAlert).removeClass('alert-validate');
+         
     }
     
+ 
+   
+
 
 })(jQuery);
