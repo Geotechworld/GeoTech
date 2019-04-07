@@ -39,7 +39,7 @@ body{
 }
 
 .d1 {
-    zoom: 2;
+    /*zoom: 2;*/
     border :solid 2px black;
     margin-left: 5px  ;
     margin-right: 5px;
